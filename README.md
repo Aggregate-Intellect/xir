@@ -8,7 +8,9 @@ This project aims to explore various post-hoc and embedded methods that can be u
 https://ai.science/l/236a6202-3495-4a8e-bbad-aedeee4bd21d@/assets
 
 ## datasets:
-Due to the copyright, please email me at yujing.yang2@mail.mcgill.ca to get the dataset. 
+
+#### Robust04
+Due to the copyright, please email yujing.yang2@mail.mcgill.ca to get the dataset. 
 
 API related to robust04 dataset (developed by ir_dataset) [robust04_ir_dataset.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/robust04_ir_dataset.ipynb)
 
