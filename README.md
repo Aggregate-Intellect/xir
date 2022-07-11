@@ -28,3 +28,5 @@ Building IR using BEIR (scifact) dataset and BEIR vector search [BEIR_dataset.ip
 Building QA using BEIR (scifact) dataset and Haystack DensePassageRetriever [Haystack_scifact_DensePassageRetriever.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/Haystack_scifact_DensePassageRetriever.ipynb)
 
 Building QA using wikipedia snippets dataset, with EmbeddingRetriever, Seq2SeqGenerator, and FARMReader from Haystack [haystack_wiki.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/haystack_wiki.ipynb)
+
+Evaluation of information retrieval using haystack [haystack_evaluation.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/Haystack_evaluation.ipynb)
