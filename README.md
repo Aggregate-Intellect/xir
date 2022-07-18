@@ -9,16 +9,21 @@ https://ai.science/l/236a6202-3495-4a8e-bbad-aedeee4bd21d@/assets
 
 ## datasets:
 
-#### Robust04
-Due to the copyright, please email yujing.yang2@mail.mcgill.ca to get the dataset. 
+#### wikiQA
+- 3000+ search queries start with a WH-word
+- all candidate sentences are from wikipedia summary paragraph
+- sentence that answer the question is labeled manually
+more information is at https://aclanthology.org/attachments/D15-1237.Presentation.pptx
 
-API related to robust04 dataset (developed by ir_dataset) [robust04_ir_dataset.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/robust04_ir_dataset.ipynb)
+#### Robust04
+- Due to the copyright, please email yujing.yang2@mail.mcgill.ca to get the dataset. 
+- API related to robust04 dataset (developed by ir_dataset) [robust04_ir_dataset.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/robust04_ir_dataset.ipynb)
 
 #### BEIR
-https://huggingface.co/datasets/BeIR/beir
+- https://huggingface.co/datasets/BeIR/beir
 
 #### 2022 Clinical Trials Track
-https://www.trec-cds.org/2022.html
+- https://www.trec-cds.org/2022.html
 
 ## current work:
 Building IR using robust04 dataset and vector search [robust04_Processed.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/robust04_Processed.ipynb)
@@ -30,3 +35,13 @@ Building QA using BEIR (scifact) dataset and Haystack DensePassageRetriever [Hay
 Building QA using wikipedia snippets dataset, with EmbeddingRetriever, Seq2SeqGenerator, and FARMReader from Haystack [haystack_wiki.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/haystack_wiki.ipynb)
 
 Evaluation of information retrieval using haystack [haystack_evaluation.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/Haystack_evaluation.ipynb)
+
+Passage-level retriever and sentence-level retriever on wikiQA dataset 
+(passage-level accuracy: 0.98, sentence-level accuracy: 0.61)
+[wikiQA_sentence_level_retriever.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/wikiQA_sentence_level_retriever.ipynb)
+
+## Slide:
+- [July 19 update](https://docs.google.com/presentation/d/1MSRtEfu1F7CeO0tNgg2Uzs_QBT2Y4f_Q92u_8wG9XSk/edit?usp=sharing)
+- [July 11 update](https://docs.google.com/presentation/d/1X_ylGDiU-DLbVcgzU4qjKBBtwKOindJpChK4R4ngD50/edit?usp=sharing)
+- [July 5 update](https://docs.google.com/presentation/d/1Xjq3BrhGhUpfGpPIfjJ1-Skss35qzlE_WhB4rzzHZh0/edit?usp=sharing)
+
