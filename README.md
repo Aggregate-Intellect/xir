@@ -1,13 +1,30 @@
 ## Project Overview
 
+This project is the source code of the paper "Towards Improving the Explainability of Text-based Information Retrieval with Knowledge Graphs".
+
 This project is a collaboration between Aggregate Intellect, McGill University, and Ryerson University on explainable information retrieval. Information retrieval and search systems normally use various techniques to generate candidates and then to rank them. Users’ trust of the shortlisting and then ranking process has a significant impact on their willingness to use the system.
 
 This project aims to explore various post-hoc and embedded methods that can be used to introduce explainability to systems like this. The group will then move on to implement a few potential solutions, and package those as open source libraries. The goal is to create open source libraries and publish papers on the topics of post-hoc or embedded explainability in Info Retrieval, Search, or related tasks. 
 
-## Project resources
-https://ai.science/l/236a6202-3495-4a8e-bbad-aedeee4bd21d@/assets
+more resources at here: [ai.science resources](https://ai.science/l/236a6202-3495-4a8e-bbad-aedeee4bd21d@/assets)
+
+
+## Approach:
+
+#### Knowledge Graph for Most Important Sentence
+The most important sentence (MIS) is the most relevant part of a passage and explains how the passage is related to the query. We identified the entities in the query, matched entities with the knowledge graph, and expanded the query using the information retrieved from the knowledge graph. The expanded query is used for retrieving the most important sentence and improving the explainability.
+
+code: [manually_entity_retriever.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/query_expansion_kg/manually_entity_retriever.ipynb)
+Manually labeled data: [entity&relationship_extraction.csv](https://github.com/Aggregate-Intellect/xir/blob/main/query_expansion_kg/entity%26relationship_extraction.csv)
+
+#### Knowledge Graph for Reranking
+After entity matching, an explainable feature of query-document relatedness is proposed, which relies on entity relatedness calculated from knowledge graph to find how two texts are related to each other. Basically, two texts are first translated into a list of entities, and then the pair-to-pair entity relatedness score is calculated and aggregated to represent the relatedness of two texts which, in our case, are the query and the document.
+
+code: [robust04_Reranking_Document.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/reranking_kg/robust04_Reranking_Document.ipynb)
 
 ## datasets:
+
+#### Wikidata
 
 #### wikiQA
 - 3000+ search queries start with a WH-word
@@ -17,7 +34,7 @@ more information is at https://aclanthology.org/attachments/D15-1237.Presentatio
 
 #### Robust04
 - Due to the copyright, please email yujing.yang2@mail.mcgill.ca to get the dataset. 
-- API related to robust04 dataset (developed by ir_dataset) [robust04_ir_dataset.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/robust04_ir_dataset.ipynb)
+- API related to robust04 dataset (developed by ir_dataset) [robust04_ir_dataset.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/reranking_kg/robust04_ir_dataset.ipynb)
 
 #### BEIR
 - https://huggingface.co/datasets/BeIR/beir
@@ -25,9 +42,8 @@ more information is at https://aclanthology.org/attachments/D15-1237.Presentatio
 #### 2022 Clinical Trials Track
 - https://www.trec-cds.org/2022.html
 
-## current work:
-Building IR using robust04 dataset and vector search [robust04_Reranking_Document.ipynb](https://github.com/ChenKua/xir/blob/main/robust04_Reranking_Document.ipynb)
 
+Building IR using robust04 dataset and vector search [robust04_Reranking_Document.ipynb](https://github.com/ChenKua/xir/blob/main/robust04_Reranking_Document.ipynb)
 
 Building IR using BEIR (scifact) dataset and BEIR vector search [BEIR_dataset.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/BEIR_dataset.ipynb)
 
