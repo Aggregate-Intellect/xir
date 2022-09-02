@@ -42,8 +42,8 @@ more information is at https://aclanthology.org/attachments/D15-1237.Presentatio
 #### 2022 Clinical Trials Track
 - https://www.trec-cds.org/2022.html
 
-
-Building IR using robust04 dataset and vector search [robust04_Reranking_Document.ipynb](https://github.com/ChenKua/xir/blob/main/robust04_Reranking_Document.ipynb)
+## current work:
+Building IR using robust04 dataset and vector search [robust04_Reranking_Document.ipynb](https://github.com/ChenKua/xir/blob/main/reranking_kg/robust04_Processed_DS_Haystack.ipynb)
 
 Building IR using BEIR (scifact) dataset and BEIR vector search [BEIR_dataset.ipynb](https://github.com/Aggregate-Intellect/xir/blob/main/BEIR_dataset.ipynb)
 
